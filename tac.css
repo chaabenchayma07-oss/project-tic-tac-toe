@@ -1,0 +1,46 @@
+body {
+   text-align: center;
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  position: relative;
+}
+
+.cell {
+  background: #1f5dcf;
+  font-size: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background: #555;
+}
+
+#line {
+  position: absolute;
+  height: 5px;
+  background: red;
+  width: 0;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  transition: 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
